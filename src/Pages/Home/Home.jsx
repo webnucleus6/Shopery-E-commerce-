@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from './HomeComponents/Banner';
+import HomepageServices from './HomeComponents/HomepageServices';
 
 const Home = () => {
     return (
@@ -7,6 +8,9 @@ const Home = () => {
 
             {/* Banner component */}
             <Banner/>
+
+            {/* Services banner */}
+            <HomepageServices/>
             
         </div>
     );
