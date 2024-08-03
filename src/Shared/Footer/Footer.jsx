@@ -12,7 +12,7 @@ import securePay from '../../assets/icons/secure.png'
 const Footer = () => {
     return (
 
-        <footer class="bg-[#191919]">
+        <footer class="bg-[#191919] mt-10">
             <div class="all-container p-6 mx-auto">
                 <div class="lg:flex gap-9">
                     <div class="w-full -mx-6 lg:w-2/5">
