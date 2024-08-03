@@ -7,7 +7,17 @@
 @tailwind utilities;
 
 
+/*  This class replace for container class */
 .all-container {
     max-width: 1240px;
     width: 100%;
+}
+
+
+
+
+/* Footer classes */
+
+.footer-text{
+    color: #808080;
 }
