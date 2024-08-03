@@ -12,11 +12,11 @@ import securePay from '../../assets/icons/secure.png'
 const Footer = () => {
     return (
 
-        <footer class="bg-[#191919] mt-10">
-            <div class="all-container p-6 mx-auto">
-                <div class="lg:flex gap-9">
-                    <div class="w-full -mx-6 lg:w-2/5">
-                        <div class="px-6 space-y-4">
+        <footer className="bg-[#191919] mt-10">
+            <div className="all-container p-6 mx-auto">
+                <div className="lg:flex gap-9">
+                    <div className="w-full -mx-6 lg:w-2/5">
+                        <div className="px-6 space-y-4">
                             <h2 className="text-3xl font-semibold flex items-center gap-2 text-white"><img src="/fav.png" alt="" /> Echo Shop</h2>
                             <p className='footer-text'>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
 
@@ -25,15 +25,15 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div class="mt-6 lg:mt-0 lg:flex-1">
-                        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div className="mt-6 lg:mt-0 lg:flex-1">
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                             <div className='footer-text flex flex-col gap-3'>
                                 <h2 className='text-white'>My Account</h2>
                                 <Link to={"/my-account"} className='text-sm hover:underline'>My Account</Link>
                                 <Link to={"/order-history"} className='text-sm hover:underline'>Order History</Link>
                                 <Link to={"/shoping-cart"} className='text-sm hover:underline'>Shoping Cart</Link>
                                 <Link to={"/wishlist"} className='text-sm hover:underline'>Wishlist</Link>
-                                
+
                             </div>
                             <div className='footer-text flex flex-col gap-3'>
                                 <h2 className='text-white'>Helps</h2>
@@ -41,7 +41,7 @@ const Footer = () => {
                                 <Link to={"/faqs"} className='text-sm hover:underline'>Faqs</Link>
                                 <Link to={"/trams"} className='text-sm hover:underline'>Trams & Condition</Link>
                                 <Link to={"/privacy"} className='text-sm hover:underline'>Privacy Policy</Link>
-                                
+
                             </div>
                             <div className='footer-text flex flex-col gap-3'>
                                 <h2 className='text-white'>Proxy</h2>
@@ -49,7 +49,7 @@ const Footer = () => {
                                 <Link to={"/shop"} className='text-sm hover:underline'>Shop</Link>
                                 <Link to={"/product"} className='text-sm hover:underline'>Product</Link>
                                 <Link to={"/track-order"} className='text-sm hover:underline'>Track Order</Link>
-                                
+
                             </div>
                             <div className='footer-text flex flex-col gap-3'>
                                 <h2 className='text-white'>Categories</h2>
@@ -57,20 +57,20 @@ const Footer = () => {
                                 <Link to={"/meat-fish"} className='text-sm hover:underline'>Meat & Fish</Link>
                                 <Link to={"/bread-bakery"} className='text-sm hover:underline'>Bread & Bakery</Link>
                                 <Link to={"/beauty-health"} className='text-sm hover:underline'>Beauty & Health</Link>
-                                
+
                             </div>
 
-                            
 
-                           
+
+
                         </div>
                     </div>
                 </div>
 
-                <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
+                <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700" />
 
                 <div className='flex flex-col md:flex-row gap-5 md:gap-0 justify-between items-center'>
-                    <p class=" footer-text">Echo-Shop © 2021. All Rights Reserved</p>
+                    <p className=" footer-text">Echo-Shop © 2021. All Rights Reserved</p>
 
                     {/* footer icons */}
                     <div className='flex items-center gap-2'>

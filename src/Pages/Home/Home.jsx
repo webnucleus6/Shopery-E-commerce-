@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './HomeComponents/Banner';
 import HomepageServices from './HomeComponents/HomepageServices';
+import HomePopularCategories from './HomeComponents/HomePopularCategories';
 
 const Home = () => {
     return (
@@ -11,6 +12,9 @@ const Home = () => {
 
             {/* Services banner */}
             <HomepageServices/>
+
+            {/* Popular categories */}
+            <HomePopularCategories/>
             
         </div>
     );
