@@ -1,11 +1,10 @@
+import NavBar from "../Shared/Navbar/NavBar";
 
 
 const MainLayout = () => {
     return (
         <div>
-            <div className="w-7xl mx-auto">
-
-            </div>
+            <NavBar/>
         </div>
     );
 };
