@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import ProductLoader from '../../../Shared/Loaders/ProductLoader/ProductLoader';
 
 const HomePopularCategories = () => {
 
@@ -19,7 +20,7 @@ const HomePopularCategories = () => {
     }, [])
 
 
-    if (loading) return <div className="loader"></div>
+    if (loading) return <ProductLoader/>
     return (
         <div className='mt-16'>
             <div className='flex justify-between items-center font-[600] mb-8'>

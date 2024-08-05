@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from './HomeComponents/Banner';
 import HomepageServices from './HomeComponents/HomepageServices';
 import HomePopularCategories from './HomeComponents/HomePopularCategories';
+import PopularProducts from './HomeComponents/PopularProducts';
 
 const Home = () => {
     return (
@@ -15,6 +16,10 @@ const Home = () => {
 
             {/* Popular categories */}
             <HomePopularCategories/>
+
+
+            {/* Popular Products */}
+            <PopularProducts/>
             
         </div>
     );
