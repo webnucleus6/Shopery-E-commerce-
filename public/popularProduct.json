@@ -54,9 +54,9 @@
         "name": "Big Potatoes",
         "productPic": "https://i.postimg.cc/7PJ8sr1Z/Product-Image-3.png",
         "regularPrice": "20.00",
-        "offerPrice": "",
+        "offerPrice": "14.00",
         "ratings": "4",
-        "discount": "",
+        "discount": "20",
         "categories": "Fresh Vegetables"
     },
     {

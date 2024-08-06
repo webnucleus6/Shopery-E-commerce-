@@ -3,6 +3,7 @@ import Banner from './HomeComponents/Banner';
 import HomepageServices from './HomeComponents/HomepageServices';
 import HomePopularCategories from './HomeComponents/HomePopularCategories';
 import PopularProducts from './HomeComponents/PopularProducts';
+import OfferSlider from './HomeComponents/OfferSlider';
 
 const Home = () => {
     return (
@@ -20,6 +21,10 @@ const Home = () => {
 
             {/* Popular Products */}
             <PopularProducts/>
+
+
+            {/* Offer slides */}
+            <OfferSlider/>
             
         </div>
     );
