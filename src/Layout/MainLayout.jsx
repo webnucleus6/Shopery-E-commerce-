@@ -1,13 +1,15 @@
-
+import { Outlet } from "react-router-dom";
+import NavBar from "../Shared/NavBar";
 
 const MainLayout = () => {
-    return (
-        <div>
-            <div className="w-7xl mx-auto">
-
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <NavBar />
+      <div>
+        <Outlet />
+      </div>
+    </div>
+  );
 };
 
 export default MainLayout;
