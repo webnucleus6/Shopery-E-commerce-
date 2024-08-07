@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Breadcrumbs from '../../assets/wishlist/Breadcrumbs.png';
 import greenCapsicum from '../../assets/wishlist/green capsicum.png';
 import redCapsicum from '../../assets/wishlist/red capsicum.png';
@@ -7,7 +8,7 @@ const ShoppingCart = () => {
     return (
         <div className="mx-auto all-container">
             <img src={Breadcrumbs} alt="" />
-            <h1 className="mt-5 text-3xl text-center">My Shopping Cart</h1>
+            <h1 className="mt-5 text-3xl font-bold text-center">My Shopping Cart</h1>
             <div className='flex flex-col lg:gap-5 lg:p-10 lg:flex-row'>
 
                 {/* left side */}
@@ -164,7 +165,7 @@ const ShoppingCart = () => {
                     <div className='flex items-center justify-center border border-gray-300'>
 
                         <div className='flex items-center justify-center m-5'>
-                            <span className='w-full px-20 py-2 text-white bg-green-500 rounded-full hover:bg-gray-100 hover:text-green-500'>Proceed to checkout</span>
+                           <Link to="/billing-info"> <span className='w-full px-20 py-2 text-white bg-green-500 rounded-full hover:bg-gray-100 hover:text-green-500 '>Proceed to checkout</span></Link>
                         </div>
                     </div>
 

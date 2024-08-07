@@ -7,7 +7,7 @@ const WishList = () => {
     return (
         <div className="mx-auto all-container">
             <img src={Breadcrumbs} alt="" />
-            <h1 className="mt-10 text-3xl text-center">My WishList</h1>
+            <h1 className="mt-10 text-3xl font-bold text-center">My WishList</h1>
             <div className="p-5 overflow-x-auto lg:p-10">
                 <table className="table">
                     {/* head */}
