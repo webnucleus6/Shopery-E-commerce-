@@ -96,12 +96,12 @@ const ShoppingCart = () => {
                             </tr>
                             {/*  */}
                             <tr>
-                                <td> <button className='rounded-full btn-sm bg-slate-100'>Return to shope</button></td>
+                                <td> <button className='rounded-full btn-sm bg-slate-100 hover:text-white hover:bg-green-500 '>Return to shope</button></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
-                                <td><button className='rounded-full btn-sm bg-slate-100'> Update cart</button></td>
+                                <td><button className='rounded-full btn-sm bg-slate-100 hover:text-white hover:bg-green-500'> Update cart</button></td>
                             </tr>
 
                         </tbody>
@@ -116,7 +116,7 @@ const ShoppingCart = () => {
                                 <div className='flex justify-between'>
                                     <label className="flex items-center gap-2 input input-bordered">
                                         <input type="text" className=" grow" placeholder="Entry coupon" />
-                                        <span className="p-5 text-white bg-black border-0 badge badge-info">Apply Coupon</span>
+                                        <span className="p-5 font-bold text-white bg-black border-0 badge badge-info hover:bg-gray-100 hover:text-green-500 ">Apply Coupon</span>
                                     </label>
                                 </div>
 
@@ -164,7 +164,7 @@ const ShoppingCart = () => {
                     <div className='flex items-center justify-center border border-gray-300'>
 
                         <div className='flex items-center justify-center m-5'>
-                            <span className='w-full px-20 py-2 text-white bg-green-500 rounded-full'>Proceed to checkout</span>
+                            <span className='w-full px-20 py-2 text-white bg-green-500 rounded-full hover:bg-gray-100 hover:text-green-500'>Proceed to checkout</span>
                         </div>
                     </div>
 
