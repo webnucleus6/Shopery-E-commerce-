@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Jenny Wilson",
+    "position": "CEO & Founder",
+    "photo": "https://i.ibb.co/1Tw20GJ/ceo.png",
+    "social_links": {
+      "facebook": "https://facebook.com/janecooper",
+      "twitter": "https://twitter.com/jennywilson",
+      "pinterest": "https://pinterest.com/jennywilson",
+      "instagram": "https://instagram.com/jennywilson"
+    }
+  },
+  {
+    "name": "Jane Cooper",
+    "position": "Worker",
+    "photo": "https://i.ibb.co/jGRZFKZ/worker.png",
+    "social_links": {
+      "facebook": "https://facebook.com/janecooper",
+      "twitter": "https://twitter.com/janecooper",
+      "pinterest": "https://pinterest.com/janecooper",
+      "instagram": "https://instagram.com/janecooper"
+    }
+  },
+  {
+    "name": "Cody Fisher",
+    "position": "Security Guard",
+    "photo": "https://i.ibb.co/sVF5vgX/guard.png",
+    "social_links": {
+      "facebook": "https://facebook.com/codyfisher",
+      "twitter": "https://twitter.com/codyfisher",
+      "pinterest": "https://pinterest.com/codyfisher",
+      "instagram": "https://instagram.com/codyfisher"
+    }
+  },
+  {
+    "name": "Robert Fox",
+    "position": "Senior Farmer Manager",
+    "photo": "https://i.ibb.co/0FtZ0b1/manager.png",
+    "social_links": {
+      "facebook": "https://facebook.com/robertfox",
+      "twitter": "https://twitter.com/robertfox",
+      "pinterest": "https://pinterest.com/robertfox",
+      "instagram": "https://instagram.com/robertfox"
+    }
+  },
+  {
+    "name": "Robert Fox",
+    "position": "Senior Farmer Manager",
+    "photo": "https://i.ibb.co/0FtZ0b1/manager.png",
+    "social_links": {
+      "facebook": "https://facebook.com/robertfox",
+      "twitter": "https://twitter.com/robertfox",
+      "pinterest": "https://pinterest.com/robertfox",
+      "instagram": "https://instagram.com/robertfox"
+    }
+  },
+  {
+    "name": "Robert Fox",
+    "position": "Senior Farmer Manager",
+    "photo": "https://i.ibb.co/0FtZ0b1/manager.png",
+    "social_links": {
+      "facebook": "https://facebook.com/robertfox",
+      "twitter": "https://twitter.com/robertfox",
+      "pinterest": "https://pinterest.com/robertfox",
+      "instagram": "https://instagram.com/robertfox"
+    }
+  }
+]

@@ -1,9 +1,9 @@
 import React from 'react';
 import { CiLocationOn } from "react-icons/ci";
-import { IoMdHeartEmpty } from "react-icons/io";
-import { LuPhoneCall } from "react-icons/lu";
 import { SlHandbag } from "react-icons/sl";
-import { Link, NavLink } from "react-router-dom";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { NavLink } from "react-router-dom"
+import { LuPhoneCall } from "react-icons/lu";
 
 
 const NavBar = () => {
@@ -24,17 +24,17 @@ const NavBar = () => {
             {/* Top Header  bg-[#333333]*/}
 
             <div className=' text-[#666666] text-xs p-4'>
-                <div className='flex flex-col items-center justify-between mx-auto all-container md:flex-row'>
+                <div className='all-container mx-auto flex flex-col  md:flex-row justify-between items-center'>
                     <div className='flex items-center gap-2'>
                         <CiLocationOn />
                         <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
                     </div>
                     <div className='flex items-center gap-2'>
-                        <select className='p-1 bg-transparent border-none outline-none' name="" id="">
+                        <select className='bg-transparent border-none outline-none p-1' name="" id="">
                             <option value="">Eng</option>
                             <option value="">Ban</option>
                         </select>
-                        <select className='p-1 bg-transparent border-none outline-none' name="" id="">
+                        <select className='bg-transparent border-none outline-none p-1' name="" id="">
                             <option value="">USD</option>
                             <option value="">Tka</option>
 
@@ -55,19 +55,19 @@ const NavBar = () => {
 
 
             {/* Middle nav bar */}
-            <div className='py-2 border-y'>
-                <div className="mx-auto navbar all-container">
+            <div className='border-y py-2'>
+                <div className="navbar all-container mx-auto">
                     <div className="navbar-start">
-                        <h2 className="flex items-center gap-2 text-3xl font-semibold"><img src="/fav.png" alt="" /> Echo Shop</h2>
+                        <h2 className="text-3xl font-semibold flex items-center gap-2"><img src="/fav.png" alt="" /> Echo Shop</h2>
                     </div>
-                    <div className="hidden navbar-center lg:flex">
-                        <label className="flex items-center gap-2 input input-bordered">
+                    <div className="navbar-center hidden lg:flex">
+                        <label className="input input-bordered flex items-center gap-2">
                             <input type="text" className="grow" placeholder="Search" />
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 16 16"
                                 fill="currentColor"
-                                className="w-4 h-4 opacity-70">
+                                className="h-4 w-4 opacity-70">
                                 <path
                                     fillRule="evenodd"
                                     d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
@@ -76,17 +76,12 @@ const NavBar = () => {
                         </label>
                     </div>
                     <div className="navbar-end">
-                        <div className='flex items-center gap-3 text-2xl'>
-                            <Link to="/wishList">
-                            <IoMdHeartEmpty className='cursor-pointer' />
-                            </Link>
-                             <span>|</span>
+                        <div className='flex items-center text-2xl gap-3'>
+                            <IoMdHeartEmpty className='cursor-pointer' /> <span>|</span>
                             <div className='flex items-center gap-4'>
                                 <div className='relative cursor-pointer'>
 
-                                   <Link to="/shopping-cart">
-                                   <SlHandbag />
-                                   </Link>
+                                    <SlHandbag />
                                     <div className='absolute text-sm -top-2 -right-2 z-10 bg-[#00B207] rounded-full size-5 text-white flex justify-center items-center'>5</div>
                                 </div>
                                 <div className='text-xs'>
@@ -104,13 +99,13 @@ const NavBar = () => {
             {/* End Nav bar */}
 
             <div className='bg-[#333333] text-[#999999]'>
-                <div className="mx-auto navbar all-container">
+                <div className="navbar  all-container mx-auto">
                     <div className="navbar-start lg:hidden">
                         <div className="dropdown">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className="w-5 h-5"
+                                    className="h-5 w-5"
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor">
@@ -128,13 +123,13 @@ const NavBar = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="hidden navbar-start lg:flex">
-                        <ul className="px-1 menu menu-horizontal">
+                    <div className="navbar-start hidden lg:flex">
+                        <ul className="menu menu-horizontal px-1">
                             {navLink}
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <div className='flex items-center gap-2 text-white'>
+                        <div className='text-white flex items-center gap-2'>
                             <LuPhoneCall className='text-2xl' />
                             <p>(+880) 17XXX</p>
                         </div>
