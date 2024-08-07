@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-dancingScript {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+}
 
 .btnShop {
   display: flex;
@@ -20,4 +27,34 @@
 
 .text-gray {
   color: #808080;
+}
+
+.carousel .thumbs-wrapper {
+  position: absolute !important;
+  left: -200px;
+  bottom: 150px;
+  transform: rotate(270deg);
+}
+
+.carousel .thumbs-wrapper li {
+  transform: rotate(-270deg);
+  border: 1px solid #a3a1a1;
+  border-radius: 5px;
+}
+
+.carousel .thumbs-wrapper .selected {
+  border: 2px solid #00b207 !important;
+}
+
+.carousel .thumbs-wrapper li:hover {
+  border: 1px solid #00b207 !important;
+}
+.control-prev,
+.control-next {
+  display: none;
+}
+
+.control-dots,
+.carousel-status {
+  display: none;
 }

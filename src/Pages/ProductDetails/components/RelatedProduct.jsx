@@ -1,14 +1,13 @@
 import React from "react";
+import Card from "../../Shop/components/Card";
+
 import "react-tooltip/dist/react-tooltip.css";
-import "@smastrom/react-rating/style.css";
-import Pagination from "./Pagination";
+
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { useState } from "react";
-import Details from "./Details";
-import Card from "./Card";
-
-const ShopRight = () => {
-  const product = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+import Details from "../../Shop/components/Details";
+const RelatedProduct = () => {
+  const product = [1, 1, 1, 1];
 
   let [isOpen, setIsOpen] = useState(false);
 
@@ -29,31 +28,16 @@ const ShopRight = () => {
   };
   return (
     <div>
-      <div className="w-full flex justify-between items-center px-4 md:px-0">
-        <div>
-          <span className="mr-2 text-gray">Sort By:</span>
-          <select className=" select select-bordered focus:outline-none shadow-sm w-32 md:w-48">
-            <option value="active">Latest</option>
-            <option value="paused">Paused</option>
-            <option value="delayed">Delayed</option>
-            <option value="canceled">Canceled</option>
-          </select>
-        </div>
-        <div>
-          <span className="font-bold">52 </span>
-          Result Found
-        </div>
+      <div>
+        <h3 className="text-3xl font-bold text-center mb-10">
+          Related Products
+        </h3>
       </div>
 
-      {/* PRODUCTS  */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
         {product?.map((product, index) => (
           <Card open={open} />
         ))}
-      </div>
-
-      <div>
-        <Pagination />
       </div>
       <div>
         <Dialog
@@ -87,4 +71,4 @@ const ShopRight = () => {
   );
 };
 
-export default ShopRight;
+export default RelatedProduct;
