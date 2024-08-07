@@ -127,6 +127,7 @@ const BillingInfo = () => {
                             <label className="flex items-center">
                                 <input type="radio" name="payment" className="w-4 h-4 border border-gray-300 rounded-full" />
                                 <span className="ml-2">Paypal</span>
+                                
                             </label>
                             <label className="flex items-center">
                                 <input type="radio" name="payment" className="w-4 h-4 border border-gray-300 rounded-full" />
