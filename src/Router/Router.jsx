@@ -10,15 +10,19 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    children:[
+      {
+        path: "/wishList",
+        element: <WishList />,
+      },
+      {
+        path: "/shopping-cart",
+        element: <ShoppingCart />,
+      },
+
+    ]
   },
-  {
-    path: "/wishList",
-    element: <WishList />,
-  },
-  {
-    path: "/shopping",
-    element: <ShoppingCart />,
-  },
+  
 ]);
 export default router;
 
