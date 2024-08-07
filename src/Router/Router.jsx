@@ -1,18 +1,29 @@
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+
+import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
+import Shop from "../Pages/Shop/Shop";
+import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import ShoppingCart from "../Pages/ShoppingCart/ShoppingCart";
 import WishList from "../Pages/WishList/WishList";
 
 
+ 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    children:[
+ 
+    children: [
       {
-        path: "/wishList",
+        path: "/shop",
+        element: <Shop />,
+      },
+      {
+        path: "/product-details",
+        element: <ProductDetails />,
+      },
+ 
+       {path: "/wishList",
         element: <WishList />,
       },
       {
@@ -26,3 +37,4 @@ const router = createBrowserRouter([
 ]);
 export default router;
 
+ 
