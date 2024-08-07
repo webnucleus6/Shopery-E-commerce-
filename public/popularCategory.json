@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Fresh Fruit",
+        "image": "https://i.postimg.cc/wjR7Bqr5/image-1-1.png"
+    },
+    {
+        "id": 2,
+        "name": "Fresh Vegetables",
+        "image": "https://i.postimg.cc/Nf50NGQh/image-1-3.png"
+    },
+    {
+        "id": 3,
+        "name": "Meat & Fish",
+        "image": "https://i.postimg.cc/MpBpSscd/image-1-5.png"
+    },
+    {
+        "id": 4,
+        "name": "Snacks",
+        "image": "https://i.postimg.cc/6QL67yfZ/image-1-7.png"
+    },
+    {
+        "id": 5,
+        "name": "Beverages",
+        "image": "https://i.postimg.cc/j5MsXm9d/image-1-8.png"
+    },
+    {
+        "id": 6,
+        "name": "Beauty & Health",
+        "image": "https://i.postimg.cc/Tw56V1rQ/image-1-11.png"
+    },
+    {
+        "id": 7,
+        "name": "Bread & Bakery",
+        "image": "https://i.postimg.cc/yYyzXwZq/image-1-2.png"
+    },
+    {
+        "id": 8,
+        "name": "Baking Needs",
+        "image": "https://i.postimg.cc/qqXDdHs2/image-1-4.png"
+    },
+    {
+        "id": 9,
+        "name": "Cooking",
+        "image": "https://i.postimg.cc/bwFCPTtV/image-1-6.png"
+    },
+    {
+        "id": 10,
+        "name": "Diabetic Food",
+        "image": "https://i.postimg.cc/6QkM2pzd/image-1.png"
+    },
+    {
+        "id": 11,
+        "name": "Dish Detergents",
+        "image": "https://i.postimg.cc/SscDWbtH/image-1-9.png"
+    },
+    {
+        "id": 12,
+        "name": "Oil",
+        "image": "https://i.postimg.cc/h4b2vgmd/image-1-10.png"
+    }
+]
