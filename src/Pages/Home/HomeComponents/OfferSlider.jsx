@@ -49,7 +49,7 @@ const OfferSlider = () => {
                             <h2 className={`text-4xl font-semibold ${titleStyle}`}>{title}</h2>
                             <p className={`font-semibold ${descriptionStyle}`}>{description}</p>
                             <Link>
-                                <CommonButton btnText={"Shop Now"} customStyle={""} />
+                                <CommonButton btnText={"Shop Now"} customStyle={"bg-white"} />
                             </Link>
                         </div>
 
