@@ -1,0 +1,18 @@
+/* styles/globals.css or styles/app.css */
+.swiper-button-next, .swiper-button-prev {
+    @apply text-white rounded-full w-10 h-10 flex items-center justify-center;
+    z-index: 10;
+  }
+  
+  .swiper-button-next {
+    @apply right-[-50px];
+  }
+  
+  .swiper-button-prev {
+    @apply left-[-50px];
+  }
+  
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 24px; /* Adjust icon size as needed */
+  }
+  
