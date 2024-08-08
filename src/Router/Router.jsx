@@ -9,11 +9,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    children:[
+      { path: "/about", element: <About/> },
+      // Add more routes here...
+    ]
   },
-  {
-    path: "/about",
-    element:  <About/> ,
-  },
+  
 ]);
 export default router;
 
