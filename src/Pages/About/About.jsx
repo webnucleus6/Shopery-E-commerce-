@@ -34,6 +34,14 @@ import star from "../../assets/about-assets/image/icon/star.png";
 import headPhone from "../../assets/about-assets/image/icon/headPhone.png";
 import check from "../../assets/about-assets/image/icon/check.png";
 import colon from "../../assets/about-assets/image/icon/colon.png";
+// import ads
+import steps from "../../assets/about-assets/image/ads/steps.png";
+import mango from "../../assets/about-assets/image/ads/mango.png";
+import food1 from "../../assets/about-assets/image/ads/food1.png";
+import food from "../../assets/about-assets/image/ads/food.png";
+import bookoff from "../../assets/about-assets/image/ads/bookoff.png";
+import gSerise from "../../assets/about-assets/image/ads/gSerise.png";
+import line from "../../assets/about-assets/image/ads/line.png";
 
 const About = () => {
   const [team, setTeam] = useState([]);
@@ -424,6 +432,15 @@ const About = () => {
             </div>
           </div>
         )}
+      </section>
+
+      {/* ads section */}
+      <section className="container mx-auto px-4 my-20 border-2">
+        {/* ad */}
+        <div className="flex items-center justify-center">
+          <img src={steps} alt="" />
+          <img src={line} alt="" />
+        </div>
       </section>
     </div>
   );
