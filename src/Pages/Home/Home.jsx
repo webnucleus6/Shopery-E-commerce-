@@ -5,6 +5,7 @@ import HomePopularCategories from './HomeComponents/HomePopularCategories';
 import PopularProducts from './HomeComponents/PopularProducts';
 import OfferSlider from './HomeComponents/OfferSlider';
 import CommonButton from '../../Shared/CommonButton/CommonButton';
+import HotDealProducts from './HomeComponents/HotDealProducts';
 
 const Home = () => {
     return (
@@ -26,6 +27,10 @@ const Home = () => {
 
             {/* Offer slides */}
             <OfferSlider />
+
+
+            {/* Hot Deal Products */}
+            <HotDealProducts/>
 
 
 
