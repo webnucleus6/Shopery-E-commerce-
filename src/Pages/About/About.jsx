@@ -4,16 +4,21 @@ import {
   FaPinterest,
   FaInstagram,
   FaFacebook,
+  FaArrowRight,
+  FaArrowLeft,
+  FaStar,
+  FaRegStar,
 } from "react-icons/fa6";
+
 import { useEffect, useState } from "react";
-// carusol 
+// carusol
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 // image and icon
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -28,11 +33,27 @@ import truck from "../../assets/about-assets/image/icon/truck.png";
 import star from "../../assets/about-assets/image/icon/star.png";
 import headPhone from "../../assets/about-assets/image/icon/headPhone.png";
 import check from "../../assets/about-assets/image/icon/check.png";
+import colon from "../../assets/about-assets/image/icon/colon.png";
 
 const About = () => {
   const [team, setTeam] = useState([]);
   const [testimonials, setTestimonials] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  // review Slider
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
+
+  // fetch team data
   useEffect(() => {
     const fetchTeamData = async () => {
       try {
@@ -50,6 +71,7 @@ const About = () => {
     fetchTeamData();
   }, []);
 
+  // fetch review
   useEffect(() => {
     const fetchTestimonials = async () => {
       try {
@@ -317,54 +339,90 @@ const About = () => {
       </section>
 
       {/* Client Testimonail */}
-      <section>
+      <section className="container mx-auto px-4 mt-20">
         {testimonials.length > 0 && (
-          <section className="container mx-auto px-4 mt-20">
-            <div className="mx-auto w-fit justify-center items-center">
-              <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
+          <div className="relative">
+            {/* Title */}
+            <div className="mb-12 px-4">
+              <h2 className="text-3xl md:text-5xl font-bold">
                 Client Testimonials
               </h2>
-              <p className="text-xs md:text-sm text-gray-500 text-center mb-8">
-                See what our clients are saying about us
-              </p>
+              <div className="absolute top-0 right-0 flex space-x-4">
+                <button
+                  onClick={prevSlide}
+                  className="bg-white text-black p-2 rounded-full shadow hover:bg-green-400 hover:text-white transition-colors duration-300"
+                >
+                  <FaArrowLeft className="h-6 w-6" />
+                </button>
+                <button
+                  onClick={nextSlide}
+                  className="bg-white text-black p-2 rounded-full shadow hover:bg-green-400 hover:text-white transition-colors duration-300"
+                >
+                  <FaArrowRight className="h-6 w-6" />
+                </button>
+              </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {testimonials.map((testimonial, index) => (
-                <div key={index} className="flex flex-col items-center p-4">
-                  <div className="relative group w-14 h-14 rounded-full overflow-hidden mb-4">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-14 h-14 object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-105"
-                    />
+
+            {/* Testimonial Cards */}
+            <div className="flex overflow-hidden gap-4">
+              {testimonials
+                .slice(currentIndex, currentIndex + 3)
+                .concat(
+                  testimonials.slice(
+                    0,
+                    Math.max(0, 3 - (testimonials.length - currentIndex))
+                  )
+                )
+                .map((testimonial, index) => (
+                  <div
+                    key={index}
+                    className="flex-none w-full md:w-1/3 p-4 transition-all duration-500 ease-in-out"
+                  >
+                    <div className="flex flex-col justify-between h-full p-6 border rounded-lg shadow-lg">
+                      <img className="w-8 h-6" src={colon} alt="" />
+                      {/* Testimonial Text */}
+                      <p className="text-gray-500 mb-4">
+                        {testimonial.testimonial}
+                      </p>
+
+                      <div className="flex items-center justify-between">
+                        {/* Image and Name */}
+                        <div className="flex items-center">
+                          <img
+                            src={testimonial.image}
+                            alt={testimonial.name}
+                            className="w-12 h-12 rounded-full mr-4"
+                          />
+                          <div>
+                            <h3 className="text-lg font-semibold">
+                              {testimonial.name}
+                            </h3>
+                            <p className="text-sm text-gray-400">Customer</p>
+                          </div>
+                        </div>
+
+                        {/* Rating */}
+                        <div className="flex">
+                          {[...Array(5)].map((_, i) =>
+                            i < testimonial.rating ? (
+                              <FaStar
+                                key={i}
+                                className="text-yellow-400 w-4 h-4"
+                              />
+                            ) : (
+                              <FaRegStar
+                                key={i}
+                                className="text-gray-300 w-4 h-4"
+                              />
+                            )
+                          )}
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-semibold">{testimonial.name}</h3>
-                  <div className="flex mb-2">
-                    {[...Array(5)].map((star, i) => (
-                      <svg
-                        key={i}
-                        className={`w-4 h-4 ${
-                          i < testimonial.rating
-                            ? "text-yellow-400"
-                            : "text-gray-300"
-                        }`}
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        aria-label={
-                          i < testimonial.rating ? "Star filled" : "Star empty"
-                        }
-                      >
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.847 5.674h5.964c.969 0 1.371 1.24.588 1.81l-4.821 3.501 1.847 5.674c.3.921-.755 1.688-1.538 1.118L10 15.347l-4.821 3.501c-.783.57-1.838-.197-1.538-1.118l1.847-5.674-4.821-3.501c-.783-.57-.38-1.81.588-1.81h5.964L9.049 2.927z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="text-gray-500 text-center">
-                    {testimonial.testimonial}
-                  </p>
-                </div>
-              ))}
+                ))}
             </div>
-          </section>
+          </div>
         )}
       </section>
     </div>
