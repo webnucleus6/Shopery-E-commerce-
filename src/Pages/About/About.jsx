@@ -99,8 +99,7 @@ const About = () => {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold text-center my-8">About Page</h2>
-      <p className="text-center text-gray-500 mb-8">Banner</p>
+      
 
       {/* Hero Section 1 */}
       <section className="container mx-auto my-20 px-4">
@@ -352,7 +351,7 @@ const About = () => {
           <div className="relative">
             {/* Title */}
             <div className="mb-12 px-4">
-              <h2 className="text-3xl md:text-5xl font-bold">
+              <h2 className="text-2xl md:text-5xl font-bold">
                 Client Testimonials
               </h2>
               <div className="absolute top-0 right-0 flex space-x-4">
@@ -435,13 +434,14 @@ const About = () => {
       </section>
 
       {/* ads section */}
-      <section className="container mx-auto px-4 my-20 border-2">
+      <div className="container mx-auto px-4 my-20 border-2">
         {/* ad */}
-        <div className="flex items-center justify-center">
-          <img src={steps} alt="" />
-          <img src={line} alt="" />
+        <div className="flex ">
+          <div>
+            <img className="w-20 h-8 border-2 border-red-500" src={steps} alt="" />
+          </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
