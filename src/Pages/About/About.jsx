@@ -98,11 +98,9 @@ const About = () => {
   }, []);
 
   return (
-    <div>
-      
-
+    <div className="container mx-auto">
       {/* Hero Section 1 */}
-      <section className="container mx-auto my-20 px-4">
+      <section className=" my-20 px-4">
         <div className="flex flex-col md:flex-row">
           <div className="md:mr-10 items-center justify-center my-auto w-full md:w-1/2">
             <h2 className="text-4xl md:text-6xl font-bold mb-8">
@@ -204,7 +202,7 @@ const About = () => {
       </section>
 
       {/* Hero Section 3 */}
-      <section className="container mx-auto mt-20 px-4">
+      <section className=" mt-20 px-4">
         <div className="flex flex-col md:flex-row">
           <div className="md:mr-10 items-center my-auto w-full md:w-1/2">
             <h2 className="text-4xl md:text-6xl font-bold mb-8">
@@ -346,7 +344,7 @@ const About = () => {
       </section>
 
       {/* Client Testimonail */}
-      <section className="container mx-auto px-4 mt-20">
+      <section className=" px-4 mt-20">
         {testimonials.length > 0 && (
           <div className="relative">
             {/* Title */}
@@ -433,15 +431,43 @@ const About = () => {
         )}
       </section>
 
-      {/* ads section */}
-      <div className="container mx-auto px-4 my-20 border-2">
-        {/* ad */}
-        <div className="flex ">
-          <div>
-            <img className="w-20 h-8 border-2 border-red-500" src={steps} alt="" />
-          </div>
-        </div>
-      </div>
+    {/* ads section */}
+<section className="flex flex-wrap justify-between items-center gap-4 py-20">
+  <div className="w-full sm:w-auto">
+    <img src={steps} alt="" className="mx-auto sm:mx-0" />
+  </div>
+  <div className="hidden sm:block">
+    <img src={line} alt="" />
+  </div>
+  <div className="w-full sm:w-auto">
+    <img src={mango} alt="" className="mx-auto sm:mx-0" />
+  </div>
+  <div className="hidden sm:block">
+    <img src={line} alt="" />
+  </div>
+  <div className="w-full sm:w-auto">
+    <img src={food1} alt="" className="mx-auto sm:mx-0" />
+  </div>
+  <div className="hidden sm:block">
+    <img src={line} alt="" />
+  </div>
+  <div className="w-full sm:w-auto">
+    <img src={food} alt="" className="mx-auto sm:mx-0" />
+  </div>
+  <div className="hidden sm:block">
+    <img src={line} alt="" />
+  </div>
+  <div className="w-full sm:w-auto">
+    <img src={bookoff} alt="" className="mx-auto sm:mx-0" />
+  </div>
+  <div className="hidden sm:block">
+    <img src={line} alt="" />
+  </div>
+  <div className="w-full sm:w-auto">
+    <img src={gSerise} alt="" className="mx-auto sm:mx-0" />
+  </div>
+</section>
+
     </div>
   );
 };
