@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import ProductLoader from '../../../Shared/Loaders/ProductLoader/ProductLoader';
-import { FaArrowRight, FaRegHeart } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import Rating from 'react-rating';
 import { SlHandbag } from "react-icons/sl";
+import { LuEye } from "react-icons/lu";
+import { FaRegHeart } from "react-icons/fa";
 
 // Rating icons
 import starGray from '../../../assets/icons/star-grey.png';
 import starRed from '../../../assets/icons/star-red.png';
 import starYellow from '../../../assets/icons/star-yellow.png';
-import { LuEye } from 'react-icons/lu';
 
+const FeaturedProducts = () => {
 
-
-const PopularProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [isHoverId, setIsHoverId] = useState(null);
@@ -31,17 +31,20 @@ const PopularProducts = () => {
     if (loading) return <ProductLoader />
 
 
+
+
+
     return (
         <div className='mt-16'>
             <div className='flex justify-between items-center font-[600] mb-8'>
-                <h2 className='text-3xl'>Popular Products
+                <h2 className='text-3xl'>Featured Products
                 </h2>
                 <button className='flex items-center gap-3 text-[#00b207] hover:underline'>View all <FaArrowRight /></button>
 
             </div>
             <div className='grid grid-cols-5'>
                 {
-                    allProducts?.map(({ productPic, productId, name, offerPrice, regularPrice, ratings, discount }) =>
+                    allProducts?.slice(0, 5)?.map(({ productPic, productId, name, offerPrice, regularPrice, ratings, discount }) =>
 
                         <div
                             onMouseOver={() => setIsHoverId(productId)}
@@ -75,6 +78,7 @@ const PopularProducts = () => {
                             </div>
 
                             <p className={`${discount ? "px-2 py-1 bg-[#ea4b48] w-fit rounded-md text-white absolute top-4 left-4" : "hidden"}`}>Sale {discount}%</p>
+
                             <div
                                 hidden={isHoverId !== productId}
                                 className='absolute top-3 right-3 space-y-2'>
@@ -90,4 +94,4 @@ const PopularProducts = () => {
     );
 };
 
-export default PopularProducts;
+export default FeaturedProducts;

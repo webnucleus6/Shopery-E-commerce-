@@ -6,6 +6,7 @@ import PopularProducts from './HomeComponents/PopularProducts';
 import OfferSlider from './HomeComponents/OfferSlider';
 import CommonButton from '../../Shared/CommonButton/CommonButton';
 import HotDealProducts from './HomeComponents/HotDealProducts';
+import FeaturedProducts from './HomeComponents/FeaturedProducts';
 
 const Home = () => {
     return (
@@ -32,8 +33,6 @@ const Home = () => {
             {/* Hot Deal Products */}
             <HotDealProducts/>
 
-
-
             {/* Offer Card Banner */}
             <div className='bg-[url("https://i.postimg.cc/76c4FyGL/offercard.png")] min-h-[360px] bg-no-repeat bg-contain mt-16 flex justify-end items-center pr-16'>
                 <div className='space-y-2'>
@@ -44,6 +43,10 @@ const Home = () => {
                     <CommonButton btnText={"Shop Now"} customStyle={"bg-[#0bb419] text-white "}/>
                 </div>
             </div>
+
+
+            {/* Featured Products */}
+            <FeaturedProducts/>
 
         </div>
     );

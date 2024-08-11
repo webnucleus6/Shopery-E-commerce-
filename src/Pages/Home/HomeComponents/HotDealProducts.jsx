@@ -20,6 +20,7 @@ import DateCounter from './DateCounter';
 const HotDealProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [isHoverId, setIsHoverId] = useState(null);
     const time = new Date();
     time.setSeconds(time.getSeconds() + 604800);
 
@@ -117,6 +118,8 @@ const HotDealProducts = () => {
                     allProducts?.slice(1,)?.map(({ productPic, productId, name, offerPrice, regularPrice, ratings, discount }) =>
 
                         <div
+                            onMouseOver={() => setIsHoverId(productId)}
+                            onMouseOut={() => setIsHoverId(null)}
                             key={productId}
                             className={`border relative  py-2  cursor-pointer hover:border-[#2C742F] hover:shadow-lg hover:text-[#2C742F] `}
                         >
@@ -146,7 +149,12 @@ const HotDealProducts = () => {
                             </div>
 
                             <p className={`${discount ? "px-2 py-1 bg-[#ea4b48] w-fit rounded-md text-white absolute top-4 left-4" : "hidden"}`}>Sale {discount}%</p>
-
+                            <div
+                                hidden={isHoverId !== productId}
+                                className='absolute top-3 right-3 space-y-2'>
+                                <div className='p-3 rounded-full border border-[#f2f2f2] bg-white hover:bg-[#00b207] hover:text-white transition'><FaRegHeart /></div>
+                                <div className='p-3 rounded-full border border-[#f2f2f2] bg-white hover:bg-[#00b207] hover:text-white transition'><LuEye /></div>
+                            </div>
                         </div>
                     )
                 }
