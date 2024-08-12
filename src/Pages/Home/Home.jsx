@@ -9,6 +9,7 @@ import HotDealProducts from './HomeComponents/HotDealProducts';
 import FeaturedProducts from './HomeComponents/FeaturedProducts';
 import LatestNews from './HomeComponents/LatestNews';
 import Testimonials from './HomeComponents/Testimonials';
+import OurSponsor from './HomeComponents/OurSponsor';
 
 const Home = () => {
     return (
@@ -32,10 +33,13 @@ const Home = () => {
                 {/* Offer slides */}
                 <OfferSlider />
 
-
-                {/* Hot Deal Products */}
+            </div>
+            {/* Hot Deal Products */}
+            <div className='bg-[#f2f2f2]'>
                 <HotDealProducts />
+            </div>
 
+            <div className='all-container mx-auto'>
                 {/* Offer Card Banner */}
                 <div className='bg-[url("https://i.postimg.cc/76c4FyGL/offercard.png")] min-h-[360px] bg-no-repeat bg-contain mt-16 flex justify-end items-center pr-16'>
                     <div className='space-y-2'>
@@ -53,12 +57,17 @@ const Home = () => {
 
                 {/* Latest News */}
                 <LatestNews />
-
-
-
             </div>
+
+
+
+
             {/* Clients Testimonials */}
             <Testimonials />
+
+
+            {/* Sponsors */}
+            <OurSponsor />
         </div>
     );
 };

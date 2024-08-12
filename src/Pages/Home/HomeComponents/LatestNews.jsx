@@ -39,7 +39,7 @@ const LatestNews = () => {
     if (isLoading) return <ProductLoader />
     return (
         <>
-            <h2 className='text-3xl text-center font-semibold mt-16 mb-8'>Latest News</h2>
+            <h2 className='text-3xl font-semibold mt-16 mb-8'>Latest News</h2>
             <Swiper
                 slidesPerView={3}
 
