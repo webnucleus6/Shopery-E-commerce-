@@ -7,6 +7,7 @@ import OfferSlider from './HomeComponents/OfferSlider';
 import CommonButton from '../../Shared/CommonButton/CommonButton';
 import HotDealProducts from './HomeComponents/HotDealProducts';
 import FeaturedProducts from './HomeComponents/FeaturedProducts';
+import LatestNews from './HomeComponents/LatestNews';
 
 const Home = () => {
     return (
@@ -47,6 +48,9 @@ const Home = () => {
 
             {/* Featured Products */}
             <FeaturedProducts/>
+
+            {/* Latest News */}
+            <LatestNews/>
 
         </div>
     );
