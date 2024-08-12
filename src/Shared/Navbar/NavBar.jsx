@@ -1,4 +1,4 @@
-import React from 'react';
+ 
 import { CiLocationOn } from "react-icons/ci";
 import { SlHandbag } from "react-icons/sl";
 import { IoMdHeartEmpty } from "react-icons/io";
