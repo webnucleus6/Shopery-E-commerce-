@@ -1,8 +1,8 @@
-import React from 'react';
+
 import { CiLocationOn } from "react-icons/ci";
 import { SlHandbag } from "react-icons/sl";
 import { IoMdHeartEmpty } from "react-icons/io";
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { LuPhoneCall } from "react-icons/lu";
 
 
@@ -42,13 +42,13 @@ const NavBar = () => {
                         <span>
                             |
                         </span>
-                        <button>
+                        <Link to='/login'>
                             Sign In
-                        </button>
+                        </Link>
                         <span>/</span>
-                        <button>
+                        <Link to='/register'>
                             Sign Up
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@ const NavBar = () => {
                                     <div className='absolute text-sm -top-2 -right-2 z-10 bg-[#00B207] rounded-full size-5 text-white flex justify-center items-center'>5</div>
                                 </div>
                                 <div className='text-xs'>
-                                    <p>Shopping cart</p>
+                                    <p className="hidden md:block">Shopping cart</p>
                                     <h3 className='text-base font-semibold'>$ 574.20</h3>
                                 </div>
                             </div>

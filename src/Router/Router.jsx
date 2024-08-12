@@ -7,6 +7,9 @@ import Shop from "../Pages/Shop/Shop";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 import ShoppingCart from "../Pages/ShoppingCart/ShoppingCart";
 import WishList from "../Pages/WishList/WishList";
+import Error from "../Pages/Error/Error";
+import LogIn from "../Pages/LogIn/LogIn";
+import Register from "../Pages/Register/Register";
  
  
 
@@ -16,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
- 
+    errorElement:<Error></Error>,
  
     children: [
      {
@@ -43,6 +46,14 @@ const router = createBrowserRouter([
     path: "/about",
     element:  <About/> ,
   },
+  {
+    path:'/login',
+    element:<LogIn></LogIn>
+  },
+  {
+    path:'/register',
+    element:<Register></Register>
+  }
 
  
     ]

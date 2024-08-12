@@ -73,6 +73,13 @@
     max-width: 1240px;
     width: 100%;
 }
+/* This class for navigation banner section */
+.navbanner{
+  background: url(/image/Shop_Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 
 
