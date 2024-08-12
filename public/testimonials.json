@@ -1,0 +1,32 @@
+[
+    {
+        "clientName": "John Doe",
+        "ratings": 4.5,
+        "review": "I recently hired this service for some home repairs, and I must say I was thoroughly impressed. The team arrived right on time, which is something I really appreciate because punctuality is important to me. They were very professional in their approach, taking the time to assess the problem before jumping into repairs. ",
+        "clientImage": "https://cdn.pixabay.com/photo/2018/02/16/14/38/portrait-3157821_960_720.jpg"
+    },
+    {
+        "clientName": "Jane Smith",
+        "ratings": 5.0,
+        "review": "I had an exceptional experience with this service from start to finish. From the moment I made the initial inquiry, I felt like I was in good hands. The customer service was outstanding—they were very responsive and answered all my questions promptly, which made the entire process smooth and hassle-free.",
+        "clientImage": "https://cdn.pixabay.com/photo/2018/10/29/21/46/human-3782189_960_720.jpg"
+    },
+    {
+        "clientName": "Michael Brown",
+        "ratings": 4.0,
+        "review": "My experience with this service was generally positive, though there were a few areas where I think they could improve. To start with the good, the team was very knowledgeable and clearly knew what they were doing. I had a complex issue with my heating system, and they were able to diagnose and fix it more quickly than I expected. ",
+        "clientImage": "https://cdn.pixabay.com/photo/2016/11/18/19/07/happy-1836445_960_720.jpg"
+    },
+    {
+        "clientName": "Emily Johnson",
+        "ratings": 4.8,
+        "review": "I was very pleased with the service I received from this company. I had a major issue with my plumbing that needed urgent attention, and they were able to fit me in on short notice, which I really appreciated. The team arrived on time and got straight to work. They were very efficient and clearly knew what they were doing. ",
+        "clientImage": "https://cdn.pixabay.com/photo/2016/09/24/03/20/man-1690965_960_720.jpg"
+    },
+    {
+        "clientName": "David Wilson",
+        "ratings": 3.5,
+        "review": "My experience with this service was somewhat mixed. On the one hand, the team was very friendly and did a good job with the repairs, which I appreciated. They were able to fix a couple of issues I had been dealing with for a while, and I haven’t had any problems with those areas since they completed the work. ",
+        "clientImage": "https://cdn.pixabay.com/photo/2020/11/30/17/21/businessman-5791566_960_720.jpg"
+    }
+]

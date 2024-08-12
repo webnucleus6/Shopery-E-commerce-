@@ -55,7 +55,7 @@ const LatestNews = () => {
                     allNews?.map(({ id, newsTitle, foodCategory, addedBy, like, comment, newsImage }) =>
 
                         <SwiperSlide key={id}>
-                            <div className="flex flex-col  p-6 overflow-hidden rounded-lg shadow-md  space-y-2 ">
+                            <div className="flex flex-col  p-6 overflow-hidden rounded-lg shadow-md  space-y-2 border">
 
 
                                 <img src={newsImage} alt="" className="object-cover w-full mb-4 h-60 sm:h-96 bg-gray-500 " />

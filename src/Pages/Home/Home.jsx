@@ -8,50 +8,57 @@ import CommonButton from '../../Shared/CommonButton/CommonButton';
 import HotDealProducts from './HomeComponents/HotDealProducts';
 import FeaturedProducts from './HomeComponents/FeaturedProducts';
 import LatestNews from './HomeComponents/LatestNews';
+import Testimonials from './HomeComponents/Testimonials';
 
 const Home = () => {
     return (
-        <div className='all-container mx-auto mt-6'>
+        <div>
+            <div className='all-container mx-auto mt-6'>
 
-            {/* Banner component */}
-            <Banner />
+                {/* Banner component */}
+                <Banner />
 
-            {/* Services banner */}
-            <HomepageServices />
+                {/* Services banner */}
+                <HomepageServices />
 
-            {/* Popular categories */}
-            <HomePopularCategories />
-
-
-            {/* Popular Products */}
-            <PopularProducts />
+                {/* Popular categories */}
+                <HomePopularCategories />
 
 
-            {/* Offer slides */}
-            <OfferSlider />
+                {/* Popular Products */}
+                <PopularProducts />
 
 
-            {/* Hot Deal Products */}
-            <HotDealProducts/>
+                {/* Offer slides */}
+                <OfferSlider />
 
-            {/* Offer Card Banner */}
-            <div className='bg-[url("https://i.postimg.cc/76c4FyGL/offercard.png")] min-h-[360px] bg-no-repeat bg-contain mt-16 flex justify-end items-center pr-16'>
-                <div className='space-y-2'>
-                    <p className='uppercase font-semibold text-white'>Summer Sale</p>
-                    <h2 className='text-[56px] text-white'><span className='font-bold text-[#ff8a00]'>37%</span> OFF</h2>
-                    <p className='footer-text'>Free on all your order, Free Shipping and  30 <br /> days money-back guarantee</p>
 
-                    <CommonButton btnText={"Shop Now"} customStyle={"bg-[#0bb419] text-white "}/>
+                {/* Hot Deal Products */}
+                <HotDealProducts />
+
+                {/* Offer Card Banner */}
+                <div className='bg-[url("https://i.postimg.cc/76c4FyGL/offercard.png")] min-h-[360px] bg-no-repeat bg-contain mt-16 flex justify-end items-center pr-16'>
+                    <div className='space-y-2'>
+                        <p className='uppercase font-semibold text-white'>Summer Sale</p>
+                        <h2 className='text-[56px] text-white'><span className='font-bold text-[#ff8a00]'>37%</span> OFF</h2>
+                        <p className='footer-text'>Free on all your order, Free Shipping and  30 <br /> days money-back guarantee</p>
+
+                        <CommonButton btnText={"Shop Now"} customStyle={"bg-[#0bb419] text-white "} />
+                    </div>
                 </div>
+
+
+                {/* Featured Products */}
+                <FeaturedProducts />
+
+                {/* Latest News */}
+                <LatestNews />
+
+
+
             </div>
-
-
-            {/* Featured Products */}
-            <FeaturedProducts/>
-
-            {/* Latest News */}
-            <LatestNews/>
-
+            {/* Clients Testimonials */}
+            <Testimonials />
         </div>
     );
 };
