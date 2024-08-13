@@ -1,7 +1,7 @@
 import { IoHomeOutline } from "react-icons/io5";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
-import shopBanner from "/image/Shop Banner.png";
+ 
 
 
 const Nav_Banner = ({name,path,nameS,pathS = null}) => {
