@@ -5,7 +5,7 @@ import Map from "./Map";
 
 const ContactPage = () => {
     return (
-        <div className="bg-slate-50 all-container mx-Auto">
+        <div className="bg-slate-50 all-container mx-auto">
             <div className="flex flex-col items-start justify-between gap-3 p-10 lg:flex-row lg:gap-10">
                 <div className="">
                 <div className="flex flex-col items-center justify-center flex-1 p-10 bg-white shadow-lg ">
