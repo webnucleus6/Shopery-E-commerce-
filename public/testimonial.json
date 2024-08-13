@@ -1,0 +1,39 @@
+[
+  {
+    "image": "https://i.ibb.co/kqdxydL/customer1.png", 
+    "name": "Client 1 Name",
+    "testimonial": "This is a testimonial from a very satisfied client. They loved our products and services, and would recommend us to others.",
+    "rating": 5
+  },
+  {
+    "image": "https://i.ibb.co/VjY7DGQ/customer2.png", 
+    "name": "Client 2 Name",
+    "testimonial": "Another testimonial from a happy client. They were impressed with our professionalism and expertise.",
+    "rating": 4
+  },
+  {
+    "image": "https://i.ibb.co/qW1wfRQ/customer3.png", 
+    "name": "Client 3 Name",
+    "testimonial": "Another testimonial from a happy client. They were impressed with our professionalism and expertise.",
+    "rating": 4
+  },
+  {
+    "image": "https://i.ibb.co/qW1wfRQ/customer3.png", 
+    "name": "Client 3 Name",
+    "testimonial": "Another testimonial from a happy client. They were impressed with our professionalism and expertise.",
+    "rating": 4
+  },
+  {
+    "image": "https://i.ibb.co/qW1wfRQ/customer3.png", 
+    "name": "Client 3 Name",
+    "testimonial": "Another testimonial from a happy client. They were impressed with our professionalism and expertise.",
+    "rating": 4
+  },
+  {
+    "image": "https://i.ibb.co/qW1wfRQ/customer3.png", 
+    "name": "Client 3 Name",
+    "testimonial": "Another testimonial from a happy client. They were impressed with our professionalism and expertise.",
+    "rating": 4
+  }
+  
+]
