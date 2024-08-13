@@ -1,4 +1,4 @@
-import React from 'react';
+ 
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { LuPhoneCall } from "react-icons/lu";
@@ -42,13 +42,13 @@ const NavBar = () => {
                         <span>
                             |
                         </span>
-                        <button>
+                        <Link to='/login'>
                             Sign In
-                        </button>
+                        </Link>
                         <span>/</span>
-                        <button>
+                        <Link to='/register'>
                             Sign Up
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
