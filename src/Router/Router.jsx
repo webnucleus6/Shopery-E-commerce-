@@ -5,6 +5,10 @@ import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import Shop from "../Pages/Shop/Shop";
 import ProductDetails from "../Pages/ProductDetails/ProductDetails";
+ 
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import UserHome from "../Pages/Dashboard/UserPages/UserHome";
+ 
 import BillingInfo from "../Pages/BillingInfo/BillingInfo";
 import ContactPage from "../Pages/ContactPage/contactPage";
 import ShoppingCart from "../Pages/ShoppingCart/ShoppingCart";
@@ -15,6 +19,7 @@ import Register from "../Pages/Register/Register";
  
  
 
+ 
 
  
 const router = createBrowserRouter([
@@ -37,6 +42,19 @@ const router = createBrowserRouter([
         element: <ProductDetails />,
       },
  
+      {
+        path: "/dashboard",
+        element: <Dashboard />,
+        children: [
+          {
+            path: "user",
+            element: <UserHome />,
+          },
+        ],
+      },
+    ],
+ 
+ 
        {path: "/wishList",
         element: <WishList />,
       },
@@ -53,6 +71,7 @@ const router = createBrowserRouter([
   {
     path:'/login',
     element:<LogIn></LogIn>
+ 
   },
   {
     path:'/register',
