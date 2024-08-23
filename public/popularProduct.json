@@ -1,0 +1,102 @@
+[
+    {
+        "productId": "1",
+        "name": "Green Apple",
+        "productPic": "https://i.postimg.cc/cC83VbDn/Product-Image.png",
+        "regularPrice": "20.99",
+        "offerPrice": "14.99",
+        "ratings": "4",
+        "discount": "50",
+        "categories": "Fresh Fruit"
+    },
+    {
+        "productId": "2",
+        "name": "Fresh China Malta",
+        "productPic": "https://i.postimg.cc/QN5kYFvn/Product-Image-1.png",
+        "regularPrice": "20.00",
+        "offerPrice": "",
+        "ratings": "4",
+        "discount": "",
+        "categories": "Fresh Fruit"
+    },
+    {
+        "productId": "3",
+        "name": "Chinese Cabbage",
+        "productPic": "https://i.postimg.cc/85vWYYXr/Product-Image-9.png",
+        "regularPrice": "12.00",
+        "offerPrice": "",
+        "ratings": "4",
+        "discount": "",
+        "categories": "Fresh Vegetables"
+    },
+    {
+        "productId": "4",
+        "name": "Green Lettuce",
+        "productPic": "https://i.postimg.cc/hPsmNTsM/Product-Image-5.png",
+        "regularPrice": "12.00",
+        "offerPrice": "",
+        "ratings": "4",
+        "discount": "",
+        "categories": "Fresh Vegetables"
+    },
+    {
+        "productId": "5",
+        "name": "Eggplant",
+        "productPic": "https://i.postimg.cc/HLgC58DD/Product-Image-7.png",
+        "regularPrice": "34.00",
+        "offerPrice": "",
+        "ratings": "4",
+        "discount": "",
+        "categories": "Fresh Vegetables"
+    },
+    {
+        "productId": "6",
+        "name": "Big Potatoes",
+        "productPic": "https://i.postimg.cc/7PJ8sr1Z/Product-Image-3.png",
+        "regularPrice": "20.00",
+        "offerPrice": "14.00",
+        "ratings": "4",
+        "discount": "20",
+        "categories": "Fresh Vegetables"
+    },
+    {
+        "productId": "7",
+        "name": "Corn",
+        "productPic": "https://i.postimg.cc/nhJ18B6P/Image.png",
+        "regularPrice": "20.00",
+        "offerPrice": "",
+        "ratings": "4",
+        "discount": "",
+        "categories": "Fresh Vegetables"
+    },
+    {
+        "productId": "8",
+        "name": "Fresh Cauliflower",
+        "productPic": "https://i.postimg.cc/DzmJRzyN/Product-Image-4.png",
+        "regularPrice": "12.00",
+        "offerPrice": "",
+        "ratings": "4",
+        "discount": "",
+        "categories": "Fresh Vegetables"
+    },
+    {
+        "productId": "9",
+        "name": "Green Capsicum",
+        "productPic": "https://i.postimg.cc/nrfXsYY8/Product-Image-6.png",
+        "regularPrice": "20.99",
+        "offerPrice": "9.00",
+        "ratings": "4",
+        "discount": "50",
+        "categories": "Fresh Vegetables"
+    },
+    {
+        "productId": "10",
+        "name": "Green Chilli",
+        "productPic": "https://i.postimg.cc/yYBJsj8c/Product-Image-8.png",
+        "regularPrice": "34.00",
+        "offerPrice": "",
+        "ratings": "4",
+        "discount": "",
+        "categories": "Fresh Vegetables"
+    }
+]

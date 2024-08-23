@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "heading": "best deals",
+        "headingStyle":"text-white",
+        "title": "Sale of the Month",
+        "titleStyle":"text-white",
+        "description": "00 DAYS : 02 HOURS : 18 MINS : 46 SECS",
+        "descriptionStyle":"text-white",
+        "cardImage": "https://i.postimg.cc/YqX1WnWx/Rectangle-54.png"
+    },
+    {
+        "id": 2,
+        "heading": "85% fat free",
+        "headingStyle":"text-white",
+        "title": "Low-Fat Meat",
+        "titleStyle":"text-white",
+        "description": "Started at $79.99",
+        "descriptionStyle":"text-white",
+        "cardImage": "https://i.postimg.cc/6Qh68S7W/Rectangle-55.png"
+    },
+    {
+        "id": 3,
+        "heading": "summer sale",
+        "headingStyle":"text-black",
+        "title": "100% Fresh Fruit",
+        "titleStyle":"text-black",
+        "description": "Up to 64% OFF",
+        "descriptionStyle":"text-black",
+        "cardImage": "https://i.postimg.cc/W3h4x83s/Rectangle-56.png"
+    },
+    {
+        "id": 4,
+        "heading": "best deals",
+        "headingStyle":"text-white",
+        "title": "Sale of the Month",
+        "titleStyle":"text-white",
+        "description": "00 DAYS : 02 HOURS : 18 MINS : 46 SECS",
+        "descriptionStyle":"text-white",
+        "cardImage": "https://i.postimg.cc/YqX1WnWx/Rectangle-54.png"
+    },
+    {
+        "id": 5,
+        "heading": "85% fat free",
+        "headingStyle":"text-white",
+        "title": "Low-Fat Meat",
+        "titleStyle":"text-white",
+        "description": "Started at $79.99",
+        "descriptionStyle":"text-white",
+        "cardImage": "https://i.postimg.cc/6Qh68S7W/Rectangle-55.png"
+    },
+    {
+        "id": 6,
+        "heading": "summer sale",
+        "headingStyle":"text-black",
+        "title": "100% Fresh Fruit",
+        "titleStyle":"text-black",
+        "description": "Up to 64% OFF",
+        "descriptionStyle":"text-black",
+        "cardImage": "https://i.postimg.cc/W3h4x83s/Rectangle-56.png"
+    }
+]
