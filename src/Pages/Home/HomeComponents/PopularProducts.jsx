@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import   { useEffect, useState } from 'react';
 import ProductLoader from '../../../Shared/Loaders/ProductLoader/ProductLoader';
 import { FaArrowRight } from 'react-icons/fa';
 import Rating from 'react-rating';
