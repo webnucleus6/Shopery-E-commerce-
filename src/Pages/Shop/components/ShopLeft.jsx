@@ -20,7 +20,7 @@ const ShopLeft = () => {
   return (
     <div>
       <div className="flex items-center gap-10">
-        <button className="btn btnShop">
+        <button className="btn  bg-[#00b207] hover:bg-[#1e7121] focus:outline-none text-white rounded-[43px] px-8">
           Filter{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -339,7 +339,7 @@ const ShopLeft = () => {
             <DisclosurePanel>
               <div className="grid grid-cols-3 gap-2">
                 <button className="btn rounded-[43px]">Healthy</button>
-                <button className="btn rounded-[43px] bg-[#00b207] text-white">
+                <button className="btn rounded-[43px] bg-[#00b207] hover:bg-[#1e7121] focus:outline-none text-white">
                   Low fat
                 </button>
                 <button className="btn rounded-[43px]">Vegetarian</button>

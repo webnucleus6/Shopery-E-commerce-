@@ -29,7 +29,7 @@ const UserHome = () => {
       </div>
       <div className="border shadow rounded-2xl w-full  mt-6">
         <div className="flex justify-between items-center px-6">
-          <h4 className=" text-xl font-semibold  "> Recet Order History</h4>
+          <h4 className=" text-xl font-semibold  "> Recent Order History</h4>
           <button className="text-[#00B207] font-bold mt-4">View All</button>
         </div>
         <div className="my-4 ">

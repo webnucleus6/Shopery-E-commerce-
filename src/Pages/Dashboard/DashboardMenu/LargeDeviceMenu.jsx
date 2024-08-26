@@ -10,7 +10,7 @@ import { FaProductHunt, FaSackDollar } from "react-icons/fa6";
 import { MdOutlineLocalShipping } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
 const LargeDeviceMenu = () => {
-  const role = "manager";
+  const role = "user";
 
   const userLinks = (
     <>
@@ -34,7 +34,7 @@ const LargeDeviceMenu = () => {
       </li>
       <li className="w-full h-full px-0 py-0 rounded-none">
         <Link
-          to={"/dashboard/order-history"}
+          to={"/dashboard/wishList"}
           className="flex items-center  gap-1   font-semibold rounded-none"
         >
           {" "}
@@ -43,7 +43,7 @@ const LargeDeviceMenu = () => {
       </li>
       <li className="w-full h-full px-0 py-0 rounded-none">
         <Link
-          to={"/dashboard/order-history"}
+          to={"/dashboard/shopping-cart"}
           className="flex items-center  gap-1   font-semibold rounded-none"
         >
           {" "}
@@ -60,7 +60,7 @@ const LargeDeviceMenu = () => {
         </Link>
       </li>
       <li className="w-full h-full px-0 py-0 rounded-none">
-        <Link className="flex items-center  gap-1   font-semibold rounded-none">
+        <Link className="flex items-center  gap-1   font-semibold rounded-none mb-4">
           {" "}
           <RiLogoutBoxLine /> Log-out
         </Link>
@@ -124,7 +124,7 @@ const LargeDeviceMenu = () => {
         </Link>
       </li>
       <li className="w-full h-full px-0 py-0 rounded-none">
-        <Link className="flex items-center  gap-1   font-semibold rounded-none">
+        <Link className="flex items-center  gap-1   font-semibold rounded-none mb-4">
           {" "}
           <RiLogoutBoxLine /> Log-out
         </Link>
@@ -177,7 +177,7 @@ const LargeDeviceMenu = () => {
         </Link>
       </li>
       <li className="w-full h-full px-0 py-0 rounded-none">
-        <Link className="flex items-center  gap-1   font-semibold rounded-none">
+        <Link className="flex items-center  gap-1 font-semibold rounded-none mb-4">
           <RiLogoutBoxLine /> Log-out
         </Link>
       </li>

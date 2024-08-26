@@ -9,22 +9,6 @@
   font-optical-sizing: auto;
 }
 
-.btnShop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 20px;
-  background-color: #00b207;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 43px;
-}
-.btnShop:hover {
-  background-color: #2c742f;
-}
-
 .text-gray {
   color: #808080;
 }
@@ -57,4 +41,15 @@
 .control-dots,
 .carousel-status {
   display: none;
+}
+
+.steps .step-primary:after {
+  background-color: #00b207;
+}
+.steps .step-primary + .step-primary:before {
+  background-color: #00b207;
+}
+.steps .pending:after {
+  background-color: none !important;
+  border: dashed 2px #00b207;
 }
