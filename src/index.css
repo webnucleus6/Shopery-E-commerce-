@@ -12,6 +12,9 @@
   margin: 0;
   padding: 0;
 }
+.pop{
+  font-family: "Poppins", sans-serif;
+}
 
 .font-dancingScript {
   font-family: "Dancing Script", cursive;

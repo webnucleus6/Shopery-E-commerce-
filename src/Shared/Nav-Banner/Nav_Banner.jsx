@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const Nav_Banner = ({name,path,nameS,pathS = null}) => {
-    console.log(name);
+    
     return (
         <div className="h-24 navbanner text-white">
             <div className="all-container mx-auto flex items-center h-full px-4 md:p-0">
