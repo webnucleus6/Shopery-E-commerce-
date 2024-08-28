@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+ 
 import   { useEffect, useState } from 'react';
-=======
-import React, { Suspense, useEffect, useState } from 'react';
->>>>>>> d3e5acbfacec6b6b53a3cf1845b4d9bc528f76c1
+ 
+ 
+
 import ProductLoader from '../../../Shared/Loaders/ProductLoader/ProductLoader';
 import { FaArrowRight, FaRegHeart } from 'react-icons/fa';
 import Rating from 'react-rating';

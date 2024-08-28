@@ -2,15 +2,11 @@ import { IoHomeOutline } from "react-icons/io5";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 
-
-<<<<<<< HEAD
-const Nav_Banner = ({name,path,nameS,pathS = null}) => {
-    
-=======
+ 
 
 const Nav_Banner = ({ name, path, nameS, pathS = null }) => {
     console.log(name);
->>>>>>> d3e5acbfacec6b6b53a3cf1845b4d9bc528f76c1
+ 
     return (
         <div className="h-24 navbanner text-white">
             <div className="all-container mx-auto flex items-center h-full px-4 md:p-0">

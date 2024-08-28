@@ -20,23 +20,23 @@ const AuthProvider = ({children}) => {
         const unsubcribe = onAuthStateChanged(auth,currentUser =>{
             setUser(currentUser)
             console.log('current user',currentUser);
-            if (currentUser) {
-                const userInfo = {email : currentUser.email}
-                //get and store token
-                axiosPublic.post('/jwt',userInfo)
-                .then(res =>{
+            // if (currentUser) {
+            //     const userInfo = {email : currentUser.email}
+            //     //get and store token
+            //     axiosPublic.post('/jwt',userInfo)
+            //     .then(res =>{
                      
-                    if (res.data.token) {
-                        localStorage.setItem('access-token',res.data.token)
-                        setLoading(false)
-                    }
-                })
-            }
-            else{
-                //reomve token
-                localStorage.removeItem('access-token')
-                setLoading(false)
-            }
+            //         if (res.data.token) {
+            //             localStorage.setItem('access-token',res.data.token)
+            //             setLoading(false)
+            //         }
+            //     })
+            // }
+            // else{
+            //     //reomve token
+            //     localStorage.removeItem('access-token')
+            //     setLoading(false)
+            // }
             
         });
         return () => {
