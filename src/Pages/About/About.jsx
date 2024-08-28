@@ -73,7 +73,7 @@ const About = () => {
       <p className="text-center text-gray-500 mb-8">Banner</p>
 
       {/* Hero Section 1 */}
-      <section className="container mx-auto my-20 px-4">
+      <section className="all-container mx-auto my-20 px-4">
         <div className="flex flex-col md:flex-row">
           <div className="md:mr-10 items-center justify-center my-auto w-full md:w-1/2">
             <h2 className="text-4xl md:text-6xl font-bold mb-8">
@@ -175,7 +175,7 @@ const About = () => {
       </section>
 
       {/* Hero Section 3 */}
-      <section className="container mx-auto mt-20 px-4">
+      <section className="all-container mx-auto mt-20 px-4">
         <div className="flex flex-col md:flex-row">
           <div className="md:mr-10 items-center my-auto w-full md:w-1/2">
             <h2 className="text-4xl md:text-6xl font-bold mb-8">
@@ -227,7 +227,7 @@ const About = () => {
         </div>
 
         {/* Slider */}
-        <div className="w-full">
+        <div className="all-container mx-auto">
           <Swiper
             spaceBetween={10}
             slidesPerView={1}
@@ -319,7 +319,7 @@ const About = () => {
       {/* Client Testimonail */}
       <section>
         {testimonials.length > 0 && (
-          <section className="container mx-auto px-4 mt-20">
+          <section className="all-container mx-auto px-4 mt-20">
             <div className="mx-auto w-fit justify-center items-center">
               <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
                 Client Testimonials
