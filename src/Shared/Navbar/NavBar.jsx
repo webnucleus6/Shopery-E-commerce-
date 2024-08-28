@@ -1,4 +1,4 @@
- 
+
 import { CiLocationOn } from "react-icons/ci";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { LuPhoneCall } from "react-icons/lu";
@@ -11,7 +11,7 @@ const NavBar = () => {
     const navLink = <>
         <li><NavLink to={"/"}>Home</NavLink></li>
         <li><NavLink to={"/shop"}>Shop</NavLink></li>
-        <li><NavLink to={"/pages"}>Pages</NavLink></li>
+        {/* <li><NavLink to={"/pages"}>Pages</NavLink></li> */}
         <li><NavLink to={"/blogs"}>Blogs</NavLink></li>
         <li><NavLink to={"/about"}>About Us</NavLink></li>
         <li><NavLink to={"/contact-us"}>Contact Us</NavLink></li>
@@ -78,15 +78,15 @@ const NavBar = () => {
                     <div className="navbar-end">
                         <div className='flex items-center gap-3 text-2xl'>
                             <Link to="/wishList">
-                            <IoMdHeartEmpty className='cursor-pointer' />
+                                <IoMdHeartEmpty className='cursor-pointer' />
                             </Link>
-                             <span>|</span>
+                            <span>|</span>
                             <div className='flex items-center gap-4'>
                                 <div className='relative cursor-pointer'>
 
-                                   <Link to="/shopping-cart">
-                                   <SlHandbag />
-                                   </Link>
+                                    <Link to="/shopping-cart">
+                                        <SlHandbag />
+                                    </Link>
                                     <div className='absolute text-sm -top-2 -right-2 z-10 bg-[#00B207] rounded-full size-5 text-white flex justify-center items-center'>5</div>
                                 </div>
                                 <div className='text-xs'>

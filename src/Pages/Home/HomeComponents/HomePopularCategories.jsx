@@ -6,6 +6,7 @@ const HomePopularCategories = () => {
 
     const [allCategories, setAllCategories] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     // loaded all categories
     useEffect(() => {
@@ -20,7 +21,7 @@ const HomePopularCategories = () => {
     }, [])
 
 
-    if (loading) return <ProductLoader/>
+    if (loading) return <ProductLoader />
     return (
         <div className='mt-16'>
             <div className='flex justify-between items-center font-[600] mb-8'>
@@ -37,7 +38,14 @@ const HomePopularCategories = () => {
                             key={category?.id}
                             className='border flex flex-col justify-center items-center py-2 rounded-md cursor-pointer hover:border-[#2C742F] hover:shadow-lg hover:text-[#2C742F]'
                         >
-                            <img src={category.image} alt="" />
+                            {!imageLoaded && <div className="skeleton h-36 w-36"></div>}
+                            <img
+                                src={category.image}
+                                alt=""
+                                className={imageLoaded ? '' : 'hidden'}
+                                onLoad={() => setImageLoaded(true)}
+
+                            />
                             <p className='text-sm font-semibold'>{category.name}</p>
                         </div>
                     )
