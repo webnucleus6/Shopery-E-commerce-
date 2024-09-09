@@ -9,6 +9,8 @@ import starGray from '../../../assets/icons/star-grey.png';
 import starRed from '../../../assets/icons/star-red.png';
 import starYellow from '../../../assets/icons/star-yellow.png';
 import { LuEye } from 'react-icons/lu';
+import SectionTitle from '../../../Shared/SectionTitle/SectionTitle';
+import ViewAllButton from '../../../Shared/ViewAllButton/ViewAllButton';
 
 
 
@@ -16,6 +18,8 @@ const PopularProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [isHoverId, setIsHoverId] = useState(null);
+    const [imageLoaded, setImageLoaded] = useState(false);
+
 
     useEffect(() => {
         setLoading(true);
@@ -34,12 +38,11 @@ const PopularProducts = () => {
     return (
         <div className='mt-16'>
             <div className='flex justify-between items-center font-[600] mb-8'>
-                <h2 className='text-3xl'>Popular Products
-                </h2>
-                <button className='flex items-center gap-3 text-[#00b207] hover:underline'>View all <FaArrowRight /></button>
+                <SectionTitle title={"Popular Products"} />
+                <ViewAllButton />
 
             </div>
-            <div className='grid grid-cols-5'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
                 {
                     allProducts?.map(({ productPic, productId, name, offerPrice, regularPrice, ratings, discount }) =>
 
@@ -49,7 +52,14 @@ const PopularProducts = () => {
                             key={productId}
                             className='border relative  py-2  cursor-pointer hover:border-[#2C742F] hover:shadow-lg hover:text-[#2C742F]'
                         >
-                            <img src={productPic} alt="" />
+                            {!imageLoaded && <div className="skeleton h-44 w-[90%] mx-auto"></div>}
+                            <img
+                                src={productPic}
+                                alt=""
+                                className={imageLoaded ? '' : 'hidden'}
+                                onLoad={() => setImageLoaded(true)}
+
+                            />
 
                             <div className='flex justify-between items-center px-4'>
                                 <div>

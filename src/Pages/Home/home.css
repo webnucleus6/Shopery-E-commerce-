@@ -62,3 +62,9 @@
 
 }
 
+
+.offer-card{
+    background:linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.7)),url("https://i.postimg.cc/76c4FyGL/offercard.png") no-repeat center ;
+    background-size: cover;
+    border-radius: 16px;
+}

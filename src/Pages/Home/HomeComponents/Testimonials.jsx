@@ -22,6 +22,31 @@ const Testimonials = () => {
 
     const [loading, setLoading] = useState(true);
     const [allReviews, setAllReviews] = useState([]);
+    const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
+    const [slidePerPage, setSlidePerPage] = useState(null);
+
+    // get current width function
+    const getCurrentWidth = () => setCurrentWidth(window.innerWidth);
+
+    useEffect(() => {
+        setCurrentWidth(window.innerWidth);
+
+        window.addEventListener('resize', getCurrentWidth);
+        return () => window.removeEventListener('resize', getCurrentWidth);
+    }, [])
+
+
+    useEffect(() => {
+        if (currentWidth <= 640) {
+            return setSlidePerPage(1);
+        }
+        else if (currentWidth <= 768 && currentWidth > 640) {
+            return setSlidePerPage(2);
+        }
+        else {
+            return setSlidePerPage(3);
+        }
+    }, [currentWidth])
 
     // Load all reviews
     useEffect(() => {
@@ -49,7 +74,7 @@ const Testimonials = () => {
 
 
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={slidePerPage}
                     spaceBetween={30}
                     pagination={{
                         clickable: true,

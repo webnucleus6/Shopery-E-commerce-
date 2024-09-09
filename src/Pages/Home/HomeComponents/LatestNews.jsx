@@ -19,10 +19,37 @@ import { MdArrowOutward } from "react-icons/md";
 import { Pagination } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import ProductLoader from '../../../Shared/Loaders/ProductLoader/ProductLoader';
+import SectionTitle from '../../../Shared/SectionTitle/SectionTitle';
 
 const LatestNews = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [allNews, setAllNews] = useState([]);
+    const [currentWidth, setCurrentWidth] = useState(window.innerWidth);
+    const [slidePerPage, setSlidePerPage] = useState(null);
+
+    // get current width function
+    const getCurrentWidth = () => setCurrentWidth(window.innerWidth);
+
+    useEffect(() => {
+        setCurrentWidth(window.innerWidth);
+
+        window.addEventListener('resize', getCurrentWidth);
+        return () => window.removeEventListener('resize', getCurrentWidth);
+    }, [])
+
+
+    useEffect(() => {
+        if (currentWidth <= 640) {
+            return setSlidePerPage(1);
+        }
+        else if (currentWidth <= 768 && currentWidth > 640) {
+            return setSlidePerPage(2);
+        }
+        else {
+            return setSlidePerPage(3);
+        }
+    }, [currentWidth])
+
 
     useEffect(() => {
         setIsLoading(true);
@@ -38,16 +65,17 @@ const LatestNews = () => {
 
     if (isLoading) return <ProductLoader />
     return (
-        <>
-            <h2 className='text-3xl font-semibold mt-16 mb-8'>Latest News</h2>
+        <div className='mt-16'>
+            <SectionTitle title={"Latest News"} />
             <Swiper
-                slidesPerView={3}
+                slidesPerView={slidePerPage}
 
                 spaceBetween={30}
                 pagination={{
                     clickable: true,
                 }}
                 modules={[Pagination]}
+                className='mt-8'
 
             >
 
@@ -91,7 +119,7 @@ const LatestNews = () => {
 
 
             </Swiper>
-        </>
+        </div>
     );
 };
 

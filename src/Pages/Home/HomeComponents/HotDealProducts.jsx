@@ -13,6 +13,8 @@ import starGray from '../../../assets/icons/star-grey.png';
 import starRed from '../../../assets/icons/star-red.png';
 import starYellow from '../../../assets/icons/star-yellow.png';
 import DateCounter from './DateCounter';
+import SectionTitle from '../../../Shared/SectionTitle/SectionTitle';
+import ViewAllButton from '../../../Shared/ViewAllButton/ViewAllButton';
 
 
 
@@ -21,6 +23,8 @@ const HotDealProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [isHoverId, setIsHoverId] = useState(null);
+    const [imageLoaded, setImageLoaded] = useState(false);
+
     const time = new Date();
     time.setSeconds(time.getSeconds() + 604800);
 
@@ -42,16 +46,14 @@ const HotDealProducts = () => {
     return (
         <div className='mt-16 all-container mx-auto py-12'>
             <div className='flex justify-between items-center font-[600] mb-8'>
-                <h2 className='text-3xl'>Hot Deals
-                </h2>
-                <button className='flex items-center gap-3 text-[#00b207] hover:underline'>View all <FaArrowRight /></button>
-
+                <SectionTitle title={"Hot Deals"} />
+                <ViewAllButton />
             </div>
 
 
 
             <div className='bg-white'>
-                <div className='grid grid-cols-5'>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
 
                     {/* Static First Products */}
                     {
@@ -60,7 +62,14 @@ const HotDealProducts = () => {
                                 key={productId}
                                 className={`border relative  py-2  cursor-pointer hover:border-[#2C742F] hover:shadow-lg hover:text-[#2C742F]  col-span-2 row-span-2`}
                             >
-                                <img src={productPic} alt="" />
+                                {!imageLoaded && <div className="skeleton h-56 w-[90%] mx-auto mb-7"></div>}
+                                <img
+                                    src={productPic}
+                                    alt=""
+                                    className={imageLoaded ? '' : 'hidden'}
+                                    onLoad={() => setImageLoaded(true)}
+
+                                />
 
 
 
@@ -124,7 +133,14 @@ const HotDealProducts = () => {
                                 key={productId}
                                 className={`border relative  py-2  cursor-pointer hover:border-[#2C742F] hover:shadow-lg hover:text-[#2C742F] `}
                             >
-                                <img src={productPic} alt="" />
+                                {!imageLoaded && <div className="skeleton h-44 w-[90%] mx-auto"></div>}
+                                <img
+                                    src={productPic}
+                                    alt=""
+                                    className={imageLoaded ? '' : 'hidden'}
+                                    onLoad={() => setImageLoaded(true)}
+
+                                />
 
                                 <div className='flex justify-between items-center px-4'>
                                     <div>

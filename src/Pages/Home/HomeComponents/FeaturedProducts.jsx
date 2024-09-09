@@ -10,6 +10,8 @@ import { FaRegHeart } from "react-icons/fa";
 import starGray from '../../../assets/icons/star-grey.png';
 import starRed from '../../../assets/icons/star-red.png';
 import starYellow from '../../../assets/icons/star-yellow.png';
+import SectionTitle from '../../../Shared/SectionTitle/SectionTitle';
+import ViewAllButton from '../../../Shared/ViewAllButton/ViewAllButton';
 
 const FeaturedProducts = () => {
 
@@ -37,12 +39,10 @@ const FeaturedProducts = () => {
     return (
         <div className='mt-16'>
             <div className='flex justify-between items-center font-[600] mb-8'>
-                <h2 className='text-3xl'>Featured Products
-                </h2>
-                <button className='flex items-center gap-3 text-[#00b207] hover:underline'>View all <FaArrowRight /></button>
-
+                <SectionTitle title={"Featured Products"}/>
+                <ViewAllButton/>
             </div>
-            <div className='grid grid-cols-5'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5'>
                 {
                     allProducts?.slice(0, 5)?.map(({ productPic, productId, name, offerPrice, regularPrice, ratings, discount }) =>
 

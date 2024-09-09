@@ -12,7 +12,7 @@ import gseries from '../../../assets/sponsor/g-series.png'
 const OurSponsor = () => {
     return (
         <div className='all-container mx-auto py-12'>
-            <div className='flex justify-between items-center'>
+            <div className='flex justify-between items-center flex-wrap'>
 
                 <div>
                     <img src={steps} alt="" />

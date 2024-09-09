@@ -12,6 +12,35 @@ import CommonButton from '../../../Shared/CommonButton/CommonButton';
 const OfferSlider = () => {
     const [allContent, setAllContent] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [slidePerPage, setSlidePerPage] = useState(null);
+
+    // Getting current width for responsive offer cards
+    const getBrowserWidth = () => {
+        setScreenWidth(window.innerWidth);
+    }
+
+
+    useEffect(() => {
+        setScreenWidth(window.innerWidth);
+
+        // get resizing value
+        window.addEventListener('resize', getBrowserWidth);
+
+        return () => window.removeEventListener('resize', getBrowserWidth);
+    }, [])
+
+    useEffect(() => {
+        if (screenWidth <= 640) {
+            return setSlidePerPage(1);
+        }
+        else if (screenWidth <= 768 && screenWidth > 640) {
+            return setSlidePerPage(2);
+        }
+        else {
+            return setSlidePerPage(3);
+        }
+    }, [screenWidth])
 
     useEffect(() => {
         setLoading(true);
@@ -29,7 +58,7 @@ const OfferSlider = () => {
     return (
         <div>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={slidePerPage}
                 spaceBetween={30}
                 pagination={{
                     clickable: true,
