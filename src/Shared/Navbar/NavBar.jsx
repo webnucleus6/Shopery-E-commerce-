@@ -58,7 +58,10 @@ const NavBar = () => {
             <div className='py-2 border-y'>
                 <div className="mx-auto navbar all-container">
                     <div className="navbar-start">
-                        <h2 className="flex items-center gap-2 text-3xl font-semibold"><img src="/fav.png" alt="" /> Echo Shop</h2>
+ 
+                        <h2 className="text-2xl md:text-3xl font-semibold flex items-center gap-2"><img src="/fav.png" alt="" /> Echo Shop</h2>
+ 
+ 
                     </div>
                     <div className="hidden navbar-center lg:flex">
                         <label className="flex items-center gap-2 input input-bordered">
@@ -75,12 +78,11 @@ const NavBar = () => {
                             </svg>
                         </label>
                     </div>
-                    <div className="navbar-end">
-                        <div className='flex items-center gap-3 text-2xl'>
-                            <Link to="/wishList">
-                                <IoMdHeartEmpty className='cursor-pointer' />
-                            </Link>
-                            <span>|</span>
+ 
+                    <div className="navbar-end px-2 md:px-0">
+                        <div className='flex items-center text-2xl gap-3'>
+                            <IoMdHeartEmpty className='cursor-pointer' /> <span>|</span>
+ 
                             <div className='flex items-center gap-4'>
                                 <div className='relative cursor-pointer'>
 
@@ -89,7 +91,7 @@ const NavBar = () => {
                                     </Link>
                                     <div className='absolute text-sm -top-2 -right-2 z-10 bg-[#00B207] rounded-full size-5 text-white flex justify-center items-center'>5</div>
                                 </div>
-                                <div className='text-xs'>
+                                <div className='text-xs hidden md:block'>
                                     <p>Shopping cart</p>
                                     <h3 className='text-base font-semibold'>$ 574.20</h3>
                                 </div>

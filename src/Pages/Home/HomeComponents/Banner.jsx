@@ -27,7 +27,7 @@ const Banner = () => {
 
 
                     <Link >
-                        <CommonButton btnText={"Shop Now"} customStyle={"mt-7"} />
+                        <CommonButton btnText={"Shop Now"} customStyle={"mt-7 bg-white"} />
                     </Link>
 
                 </div>

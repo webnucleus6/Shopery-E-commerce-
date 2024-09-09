@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "foodCategory": "Vegetarian",
+        "addedBy": "John Doe",
+        "like": 152,
+        "comment": 30,
+        "newsTitle": "The Rise of Plant-Based Diets",
+        "newsDescription": "With growing awareness of health and environmental benefits, plant-based diets are becoming increasingly popular. Many people are turning to vegetarian options, which are not only nutritious but also sustainable. This trend is evident in restaurants, supermarkets, and even fast-food chains.",
+        "newsImage": "https://cdn.pixabay.com/photo/2023/06/12/11/34/mushrooms-8058299_1280.jpg"
+    },
+    {
+        "id": 2,
+        "foodCategory": "Vegan",
+        "addedBy": "Jane Smith",
+        "like": 89,
+        "comment": 12,
+        "newsTitle": "Veganism Goes Mainstream",
+        "newsDescription": "Veganism is no longer a niche lifestyle choice but a growing movement worldwide. More people are opting for a vegan diet to promote animal welfare, improve health, and reduce environmental impact. The availability of vegan products has expanded significantly.",
+        "newsImage": "https://cdn.pixabay.com/photo/2023/02/06/12/52/vegetables-7771980_960_720.jpg"
+    },
+    {
+        "id": 3,
+        "foodCategory": "Fast Food",
+        "addedBy": "Mike Johnson",
+        "like": 230,
+        "comment": 45,
+        "newsTitle": "Fast Food Chains Introduce",
+        "newsDescription": "Fast food chains are responding to consumer demand for healthier options. New menu items include salads, wraps, and low-calorie meals. This shift is part of a broader trend toward healthier eating habits, even in traditionally unhealthy food categories.",
+        "newsImage": "https://cdn.pixabay.com/photo/2024/05/06/17/06/french-fries-8743802_960_720.jpg"
+    },
+    {
+        "id": 4,
+        "foodCategory": "Seafood",
+        "addedBy": "Emily Davis",
+        "like": 145,
+        "comment": 23,
+        "newsTitle": " A Growing Concern",
+        "newsDescription": "Sustainable seafood practices are becoming more critical as concerns about overfishing and marine conservation rise. Consumers are increasingly looking for seafood options that are sourced responsibly, leading to a surge in certified sustainable products.",
+        "newsImage": "https://cdn.pixabay.com/photo/2017/02/14/17/23/united-kingdom-2066475_960_720.jpg"
+    }
+]

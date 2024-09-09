@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
 import ProductLoader from '../../../Shared/Loaders/ProductLoader/ProductLoader';
+import SectionTitle from '../../../Shared/SectionTitle/SectionTitle';
+import ViewAllButton from '../../../Shared/ViewAllButton/ViewAllButton';
 
 const HomePopularCategories = () => {
 
@@ -25,12 +26,10 @@ const HomePopularCategories = () => {
     return (
         <div className='mt-16'>
             <div className='flex justify-between items-center font-[600] mb-8'>
-                <h2 className='text-3xl'>Popular Categories
-                </h2>
-                <button className='flex items-center gap-3 text-[#00b207] hover:underline'>View all <FaArrowRight /></button>
-
+                <SectionTitle title={"Popular Category"} />
+                <ViewAllButton />
             </div>
-            <div className='grid grid-cols-6 gap-6'>
+            <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6'>
                 {
                     allCategories?.map(category =>
 
@@ -46,7 +45,9 @@ const HomePopularCategories = () => {
                                 onLoad={() => setImageLoaded(true)}
 
                             />
-                            <p className='text-sm font-semibold'>{category.name}</p>
+
+                            <p className='text-xs md:text-sm font-semibold'>{category.name}</p>
+ 
                         </div>
                     )
                 }
