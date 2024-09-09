@@ -51,8 +51,11 @@ const Home = () => {
                         <h2 className='text-4xl lg:text-[56px] text-white'><span className='font-bold text-[#ff8a00]'>37%</span> OFF</h2>
                         <p className='text-[#ffffffb3] lg:footer-text'>Free on all your order, Free Shipping and  30 <br /> days money-back guarantee</p>
 
+ 
                         <CommonButton btnText={"Shop Now"} customStyle={"bg-[#0bb419] text-white "} />
                     </div>
+ 
+ 
                 </div>
 
 

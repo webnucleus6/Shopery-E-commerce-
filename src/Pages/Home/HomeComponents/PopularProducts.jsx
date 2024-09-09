@@ -1,4 +1,8 @@
-import React, { useEffect, useState } from 'react';
+ 
+import   { useEffect, useState } from 'react';
+ 
+ 
+
 import ProductLoader from '../../../Shared/Loaders/ProductLoader/ProductLoader';
 import { FaArrowRight, FaRegHeart } from 'react-icons/fa';
 import Rating from 'react-rating';
@@ -8,9 +12,13 @@ import { SlHandbag } from "react-icons/sl";
 import starGray from '../../../assets/icons/star-grey.png';
 import starRed from '../../../assets/icons/star-red.png';
 import starYellow from '../../../assets/icons/star-yellow.png';
+ 
 import { LuEye } from 'react-icons/lu';
 import SectionTitle from '../../../Shared/SectionTitle/SectionTitle';
 import ViewAllButton from '../../../Shared/ViewAllButton/ViewAllButton';
+ 
+import { Link } from 'react-router-dom';
+ 
 
 
 
@@ -18,8 +26,10 @@ const PopularProducts = () => {
     const [allProducts, setAllProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [isHoverId, setIsHoverId] = useState(null);
+ 
     const [imageLoaded, setImageLoaded] = useState(false);
 
+ 
 
     useEffect(() => {
         setLoading(true);
@@ -80,9 +90,8 @@ const PopularProducts = () => {
                                 </div>
                                 <div className='bg-[#f2f2f2] p-3 rounded-full hover:bg-[#00b207] hover:text-white transition'>
                                     <SlHandbag />
-                                </div>
-
-                            </div>
+                
+ 
 
                             <p className={`${discount ? "px-2 py-1 bg-[#ea4b48] w-fit rounded-md text-white absolute top-4 left-4" : "hidden"}`}>Sale {discount}%</p>
                             <div
@@ -91,10 +100,15 @@ const PopularProducts = () => {
                                 <div className='p-3 rounded-full border border-[#f2f2f2] bg-white hover:bg-[#00b207] hover:text-white transition'><FaRegHeart /></div>
                                 <div className='p-3 rounded-full border border-[#f2f2f2] bg-white hover:bg-[#00b207] hover:text-white transition'><LuEye /></div>
                             </div>
+ 
                         </div>
-                    )
-                }
-
+                        {discount && <p className='px-2 py-1 bg-[#ea4b48] w-fit rounded-md text-white absolute top-4 left-4'>Sale {discount}%</p>}
+                        <div className={`absolute top-3 right-3 space-y-2 ${isHoverId === productId ? 'block' : 'hidden'}`}>
+                            <div className='p-3 rounded-full border border-[#f2f2f2] bg-white hover:bg-[#00b207] hover:text-white transition'><FaRegHeart /></div>
+                            <div className='p-3 rounded-full border border-[#f2f2f2] bg-white hover:bg-[#00b207] hover:text-white transition'><LuEye /></div>
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     );

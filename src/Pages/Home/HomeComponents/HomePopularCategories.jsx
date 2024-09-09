@@ -45,7 +45,9 @@ const HomePopularCategories = () => {
                                 onLoad={() => setImageLoaded(true)}
 
                             />
+
                             <p className='text-xs md:text-sm font-semibold'>{category.name}</p>
+ 
                         </div>
                     )
                 }
